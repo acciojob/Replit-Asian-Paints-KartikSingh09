@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Asian Paints Grid</title>
   <style>
-    #grid-container {
+    .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 100px);
       gap: 10px;
@@ -24,7 +24,7 @@
 </head>
 <body>
 
-  <div id="grid-container">
+  <div class="grid-container">
     <div class="grid-item" id="1">1</div>
     <div class="grid-item" id="2">2</div>
     <div class="grid-item" id="3">3</div>
@@ -38,12 +38,12 @@
 
   <input type="text" id="block_id" placeholder="Enter Block ID (1-9)">
   <input type="text" id="colour_id" placeholder="Enter Color">
-  <button id="change_button">Change Color</button>
-  <button id="Reset">Reset</button>
+  <button id="change_button">Change</button>
+  <button id="reset_button">Reset</button>
 
   <script>
     const changeButton = document.getElementById("change_button");
-    const resetButton = document.getElementById("Reset");
+    const resetButton = document.getElementById("reset_button");
 
     function resetGridColors() {
       for (let i = 1; i <= 9; i++) {
